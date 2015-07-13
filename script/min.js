@@ -1,0 +1,1 @@
+/*! BusinessSolution - v0.1.0 - 2015-07-13 */function sliderJS(a,b){var c=$(b).find("ul"),d=$(".slider ul li").width();$(c).animate({marginLeft:"-"+d*a},500)}$(document).on("click",".slider .nav span",function(){var a=$(this).closest(".slider");$(a).find("span").removeClass("on"),$(this).addClass("on");var b=$(this).attr("rel");sliderJS(b,a)});
